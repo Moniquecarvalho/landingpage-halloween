@@ -5,8 +5,37 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  color: aliceblue;
 }
 
 h1 {
   font-family: "Creepster", system-ui;
+}
+
+header {
+  background-image: linear-gradient(to top, #181616 0%, rgba(0, 0, 0, 0) 60%), url(./image/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+header .emoji-left {
+  font-size: 3rem;
+  animation: float 1s ease-in-out infinite alternate;
+}
+header .emoji-right {
+  font-size: 3rem;
+  animation: float 1s ease-in-out infinite alternate-reverse;
+}
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
 }/*# sourceMappingURL=style.css.map */
