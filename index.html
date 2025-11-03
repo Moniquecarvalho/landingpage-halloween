@@ -117,6 +117,49 @@
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="presents">
+          <h3>Confirme sua Presença</h3>
+          <p class="subtitle">
+            Não perca a festa mais assustadora do ano! Confirme já sua presença.
+          </p>
+
+          <form action="#">
+            <label for="name">
+              👤 Nome Completo *
+              <input type="text" id="name" name="name" placeholder="Seu nome assombrado..." required />
+            </label>
+
+            <label for="email">
+              📧 Email *
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </label>
+
+            <label for="">👥 Número de Convidados
+              <select name="guests" id="guests" required>
+                <option value="" disabled selected>Choose option...</option>
+                <option value="0">0 - Vou sozinho(a)</option>
+                <option value="1">1 - Mais um convidado</option>
+                <option value="2">2 - Vou com dois amigos</option>
+                <option value="3">3 - Três é demais!</option>
+              </select>
+            </label>
+
+            <label for="fantasy">
+              🎭 Sua Fantasia *
+              <input type="text" id="fantasy" name="fantasy" placeholder="Descreva sua fantasia..." required />
+            </label>
+
+            <label for="mensagem">
+              💬 Mensagem (opcional)
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+            </label>
+
+            <button type="submit">🎃 CONFIRMAR PRESENÇA AGORA!</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
