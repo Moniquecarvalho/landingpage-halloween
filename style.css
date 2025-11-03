@@ -22,15 +22,18 @@ header .logo {
   padding: 60px;
 }
 header .emoji-left {
-  font-size: 3rem;
+  width: 60px;
+  height: 60px;
   animation: float 1s ease-in-out infinite alternate;
 }
 header .emoji-right {
-  font-size: 3rem;
+  width: 36px;
+  height: 40px;
   animation: float 1s ease-in-out infinite alternate-reverse;
 }
 header .emoji-bottom {
-  font-size: 2rem;
+  width: 48px;
+  height: 48px;
   animation: float 1s ease-in-out infinite alternate-reverse;
   position: absolute;
   transform: translateX(-50%);
@@ -46,6 +49,7 @@ header .emoji-bottom {
 }
 header .info {
   text-align: center;
+  margin: 0 auto;
 }
 header .info h1 {
   font-size: 6rem;
@@ -67,8 +71,8 @@ header .info p {
   color: rgb(190, 180, 167);
   margin-bottom: 54px;
 }
-header .info .btn {
-  background-color: #F06E42;
+header .info button {
+  background-color: #f06e42;
   color: #181616;
   width: 323px;
   height: 40px;
@@ -79,13 +83,13 @@ header .info .btn {
   transition: background-color 0.3s ease;
   margin: 0 24px;
 }
-header .info .btn:hover {
-  background-color: #732EB8;
+header .info button:hover {
+  background-color: #732eb8;
 }
 
 .details {
   width: 100%;
-  height: 71vh;
+  height: 63vh;
   background-color: #181616;
 }
 .details h3 {
@@ -103,11 +107,9 @@ header .info .btn:hover {
   display: flex;
   justify-content: space-around;
   margin-top: 60px;
-  margin-bottom: 80px;
 }
 .details .info-cards .card {
-  background-color: #211E1C;
-  border: 3px solid forestgreen;
+  background-color: #211e1c;
   padding: 0 32px;
   width: 285px;
   height: 194px;
@@ -119,7 +121,7 @@ header .info .btn:hover {
   gap: 15px;
 }
 .details .info-cards .card h4 {
-  color: #BEB4A7;
+  color: #beb4a7;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 28px;
@@ -127,4 +129,105 @@ header .info .btn:hover {
 .details .info-cards .card p {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.fantasy {
+  background: linear-gradient(0deg, #402659, #402659);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fantasy h3 {
+  background: linear-gradient(170deg, #732eb8 0%, #f06e42 30%, #732eb8 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-size: 3.75rem;
+  padding: 68px 0 47px 0;
+}
+.fantasy .subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #beb4a7;
+  width: 823px;
+  margin: 0 auto;
+}
+.fantasy .cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 780px;
+  margin-top: 48px;
+}
+.fantasy .cards .card-fantasy {
+  background-color: #211e1c;
+  width: 169px;
+  height: 170px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 16px;
+}
+.fantasy .cards .card-fantasy img {
+  width: 36px;
+  height: 40px;
+}
+.fantasy .cards .card-fantasy h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+.fantasy .cards .card-fantasy p {
+  color: #beb4a7;
+  font-size: 0.87rem;
+  font-weight: 400;
+  text-align: center;
+}
+.fantasy .contest {
+  background: rgba(33, 30, 28, 0.5);
+  width: 93%;
+  height: 70vh;
+  margin: 48px 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.fantasy .contest h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-weight: bold;
+  color: rgb(240, 110, 66);
+}
+.fantasy .contest p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #beb4a7;
+  text-align: center;
+}
+.fantasy .contest button {
+  background-color: #f06e42;
+  color: #181616;
+  width: 323px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 24px;
+}
+.fantasy .contest button:hover {
+  background-color: #732eb8;
 }/*# sourceMappingURL=style.css.map */
